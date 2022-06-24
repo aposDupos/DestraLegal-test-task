@@ -1,0 +1,12 @@
+@import "styles/colors";
+
+.Login{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  &__text{
+    color: $red;
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../styles/colors";
+
+.Layout{
+  min-height: 100vh;
+  background-color: $main-bg;
+  &__header{
+    min-height: 48px;
+    padding: 0 50px;
+    background-color: #DDFFF7;
+    border-bottom: 1px $deepRed solid;
+  }
+  &__h1{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  &__row{
+    height: 100%;
+  }
+  &__col{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    border-right: 1px $deepRed solid;
+    border-left: 1px $deepRed solid;
+  }
+  &__content{
+    height: 100%;
+    background-color: #FFFFFF;
+    color: $grey;
+    flex: auto;
+    padding: 24px 48px;
+  }
+  &__footer{
+    background-color: #F9EBC8;
+  }
+  &__footerName{
+    display: flex;
+    width: fit-content;
+    padding: 4px;
+    border: 1px $deepRed solid;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 300ms ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .Layout{
+    &__header{
+      padding: 8px 20px;
+      height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .Layout{
+    &__header{
+      height: unset;
+    }
+  }
+}

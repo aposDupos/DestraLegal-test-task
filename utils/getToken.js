@@ -1,0 +1,1 @@
+export const getToken = (type) => localStorage.getItem(type)

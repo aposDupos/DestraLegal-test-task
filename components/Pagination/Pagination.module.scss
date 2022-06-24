@@ -1,0 +1,22 @@
+.Pagination{
+  display: flex;
+  gap: 16px;
+
+  &__main{
+
+  }
+
+  &__btns{
+    display: flex;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .Pagination{
+    flex-direction: column;
+    &__main{
+
+    }
+  }
+}
